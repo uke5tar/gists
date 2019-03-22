@@ -22,8 +22,8 @@
             let opacity = el.style.opacity;
             const timer = setInterval(() => {
                 if (opacity <= 0) {
-                  clearInterval(timer);
-                  opacity = 0;
+                    clearInterval(timer);
+                    opacity = 0;
                 }
                 el.style.opacity = opacity -= 50 / ms;
             }, 50);
