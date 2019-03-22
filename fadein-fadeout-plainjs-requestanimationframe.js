@@ -7,10 +7,10 @@ const fadeIn = (el, smooth = true, displayStyle = 'block') => {
         let request;
 
         const animation = () => {
-        el.style.opacity = opacity += 0.04;
-        if (opacity >= 1) {
-            opacity = 1;
-            cancelAnimationFrame(request);
+            el.style.opacity = opacity += 0.04;
+            if (opacity >= 1) {
+                opacity = 1;
+                cancelAnimationFrame(request);
             }
         };
 
