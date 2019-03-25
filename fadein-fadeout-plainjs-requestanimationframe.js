@@ -35,8 +35,8 @@ const fadeOut = (el, smooth = true, displayStyle = 'none') => {
             el.style.opacity = opacity -= 0.04;
             if (opacity <= 0) {
                 opacity = 0;
+                el.style.display = displayStyle;
                 cancelAnimationFrame(request);
-                el.style.display = displayStyle
             }
         };
 
